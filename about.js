@@ -17,7 +17,7 @@ window.onload = () => {
   renderWaterfall(layout, 5, 10);
 }
 
-
+/*
 const renderWaterfall = (rootNode, columnCount=3, elementGap=10) => {
   rootNode.style.setProperty('display', 'grid');
   rootNode.style.setProperty('grid-template-columns', `repeat(${columnCount}, 1fr)`);
@@ -43,3 +43,4 @@ const renderWaterfall = (rootNode, columnCount=3, elementGap=10) => {
     flexes[min.index].append(node);
   };
 };
+*/

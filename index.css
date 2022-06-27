@@ -3,6 +3,20 @@ html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: left;
   line-height: normal;
+  --primary-color: #8946A6;
+  --secondary-color: #bb6bc4;
+  --tertiary-color: #e9a9d8;
+  --quaternary-color: #f8dae3;
+  --main-text-color: black;
+  --alt-text-color: white;
+}
+
+div {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
@@ -32,7 +46,8 @@ header {
   box-sizing: border-box;
   width: 100%;
   position: relative;
-  background-color: rgba(84, 0, 153, 0.9);
+  background-color: var(--primary-color);
+  color: var(--alt-text-color);
 }
 
 nav ul {
@@ -59,7 +74,7 @@ nav ul li a {
   height: 100%;
   box-sizing: border-box;
   text-decoration: none;
-  color: white;
+  color: var(--alt-text-color);
 }
 
 nav ul li a div {
@@ -75,14 +90,14 @@ nav ul li a div {
 }
 
 nav ul li a div:hover {
-  background-color: rgba(34, 17, 70, .5);
+  background-color: rgba(34, 17, 70, .3);
 }
 
  nav ul li:first-child {
    font-size: 4rem;
    font-weight: 700;
    padding: .5rem 2rem;
-   color: white;
+   color: var(--alt-text-color);
    font-family: "ArtBrewery";
    line-height: 3rem;
  }
@@ -105,18 +120,17 @@ main .elem {
   position: relative;
   display: flex;
   flex-direction: row;
-  
   width: 100%;
   height: auto;
   margin: 0;
   padding: 1rem 0;
-  background-color: #b999ff;
-  color: black;
+  background-color: var(--tertiary-color);
+  color: var(--main-text-color);
 }
 
 .elem:nth-child(2n) {
-  background-color: #214;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--alt-text-color);
   flex-direction: row-reverse;
 }
 
@@ -161,6 +175,14 @@ main .elem div {
   font-size: 1.1rem;
 }
 
+.elem h1 {
+  color: var(--primary-color);
+}
+
+.elem:nth-child(2n) h1 {
+  color: var(--quaternary-color);
+}
+
 .elem__image-container {
   width: 100%;
   height: 100%;
@@ -178,8 +200,8 @@ footer {
   position: relative;
   width: 100%;
   height: auto;
-  background-color: #214;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--alt-text-color);
 }
 
 footer ul {
@@ -197,4 +219,5 @@ footer ul li {
   display: block;
   padding: 0.6rem;
   font-size: 0.9rem;
+  color: var(--quaternary-color);
 }

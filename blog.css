@@ -1,13 +1,5 @@
-div {
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 main {
-  background-color: #214;
+  background-color: var(--tertiary-color);
 }
 
 .layout {
@@ -31,7 +23,7 @@ main {
   width: 100%;
   height: auto;
   min-height: 200px;
-  background-color: #b999ff;
+  background-color: var(--quaternary-color);
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -54,10 +46,11 @@ main {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: var(--primary-color);
 }
 
 .blog__time {
-  color: #555;
+  color: var(--secondary-color);
 }
 
 .blog__content {
